@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: capacitor
+  namespace: capacitor
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: capacitor
+      sourceRef:
+        kind: HelmRepository
+        name: capacitor
+        namespace: flux-system
+  values:
+    service:
+      type: ClusterIP

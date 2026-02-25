@@ -3,3 +3,6 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+- capacitor-namespace.yaml
+- capacitor-helmrepo.yaml
+- capacitor-helmrelease.yaml
