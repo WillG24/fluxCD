@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: headlamp
-          image: ghcr.io/headlamp/headlamp:latest
+          image: ghcr.io/kubernetes-sigs/headlamp:latest
           ports:
             - containerPort: 80
